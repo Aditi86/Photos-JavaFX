@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomePageController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="670.0" prefWidth="850.0">
+         <children>
+            <Label fx:id="nameOfUser" alignment="CENTER" layoutY="14.0" prefHeight="66.0" prefWidth="850.0" style="-fx-background-color: #F39C12;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Artifakt Element Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="260.0" layoutY="107.0" prefHeight="34.0" prefWidth="139.0" text="Albums">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="14.0" />
+               </font>
+            </Label>
+            <ListView fx:id="albumListView" layoutX="97.0" layoutY="154.0" prefHeight="331.0" prefWidth="466.0" />
+            <Button layoutX="634.0" layoutY="90.0" mnemonicParsing="false" onAction="#logOut" prefHeight="34.0" prefWidth="112.0" text="Log Out" textFill="RED">
+               <font>
+                  <Font name="Artifakt Element Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="590.0" layoutY="180.0" />
+            <TextField fx:id="createAlbumName" layoutX="590.0" layoutY="198.0" prefHeight="34.0" prefWidth="200.0" promptText="Album Name">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </TextField>
+            <Button layoutX="629.0" layoutY="255.0" mnemonicParsing="false" onAction="#createAlbum" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: #F39C12;" text="Create" textFill="WHITE">
+               <font>
+                  <Font name="Artifakt Element Bold" size="14.0" />
+               </font></Button>
+            <Label layoutX="588.0" layoutY="342.0" text="Rename selected album: ">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="12.0" />
+               </font></Label>
+            <TextField fx:id="renameAlbum" layoutX="590.0" layoutY="360.0" prefHeight="34.0" prefWidth="200.0" promptText="Album Name">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </TextField>
+            <Button layoutX="629.0" layoutY="415.0" mnemonicParsing="false" onAction="#renameAlbum" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: #F39C12;" text="Rename" textFill="WHITE">
+               <font>
+                  <Font name="Artifakt Element Bold" size="14.0" />
+               </font></Button>
+            <TextField fx:id="searchphotos" layoutX="590.0" layoutY="512.0" prefHeight="34.0" prefWidth="200.0" promptText="Tags, yy-mm-dd To yy-mm-dd">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </TextField>
+            <Button layoutX="634.0" layoutY="558.0" mnemonicParsing="false" onAction="#searchPhotos" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #F39C12;" text="Search Photos" textFill="WHITE">
+               <font>
+                  <Font name="Artifakt Element Bold" size="13.0" />
+               </font></Button>
+            <Button layoutX="399.0" layoutY="541.0" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #F39C12;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="Artifakt Element Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="148.0" layoutY="541.0" mnemonicParsing="false" onAction="#openAlbum" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #F39C12;" text="Open" textFill="WHITE">
+               <font>
+                  <Font name="Artifakt Element Bold" size="14.0" />
+               </font></Button>
+            <Label layoutX="590.0" layoutY="180.0" text="Create new album:">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="590.0" layoutY="494.0" text="Search:">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

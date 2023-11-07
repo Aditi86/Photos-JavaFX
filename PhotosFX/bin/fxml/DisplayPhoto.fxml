@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DisplayImageController">
+   <children>
+      <AnchorPane prefHeight="670.0" prefWidth="850.0">
+         <children>
+            <Button layoutX="36.0" layoutY="29.0" mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="90.0" text="Go Back" textFill="#168c37">
+               <font>
+                  <Font name="Artifakt Element Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="725.0" layoutY="29.0" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="91.0" text="Log Out" textFill="#f20404">
+               <font>
+                  <Font name="Artifakt Element Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="myImageView" fitHeight="439.0" fitWidth="657.0" layoutX="97.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="116.0" layoutY="566.0" text="Modfied Photo Date: ">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="190.0" layoutY="585.0" text="Caption: ">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="159.0" layoutY="604.0" text="Location Tag: ">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="170.0" layoutY="622.0" text="People Tag: ">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="245.0" layoutY="566.0" prefHeight="18.0" prefWidth="192.0">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="caption" layoutX="245.0" layoutY="585.0" prefHeight="19.0" prefWidth="587.0">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="locationTag" layoutX="245.0" layoutY="604.0" prefHeight="19.0" prefWidth="587.0">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="peopleTag" layoutX="245.0" layoutY="622.0" prefHeight="19.0" prefWidth="587.0">
+               <font>
+                  <Font name="ArtifaktElement-Regular" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
